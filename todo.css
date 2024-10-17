@@ -1,0 +1,117 @@
+body {
+  font-family: Times New Roman, Times, serif;
+  background-color: teal;
+}
+
+.container {
+  width: 50%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-family: Times New Roman, Times, serif;
+  color: #fff;
+  font-size: 48px;
+}
+
+section.common {
+  width: 80%;
+  margin: 40px auto;
+}
+
+h2.subtitle {
+  text-align: center;
+  color: #fff;
+}
+
+.input_add,.input_search {
+  color: #fff;
+  border: none;
+  background: rgba(0, 0, 0, .2);
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Times New Roman, Times, serif;
+  border-radius: 5px;
+}
+
+.input_add::placeholder,.input_search::placeholder {
+  color: silver;
+}
+
+ul.list {
+  padding: 0;
+}
+
+li.todo {
+  position: relative;
+  margin-bottom: 10px;
+  list-style: none;
+  line-height: 1.5;
+  font-weight: 700;
+  background-color: #03503f80;
+  border-radius: 5px;
+  padding: 10px;
+  height: 50px;
+}
+
+span.task {
+  cursor: pointer;
+  display: block;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-family: Times New Roman, Times, serif;
+  color: #fff;
+}
+
+div.trash_wrapper {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  width: 30px;
+}
+
+.trash {
+	position: relative;
+	width: 0.9em;
+	height: 1.2em;
+	border-left: 0.1em solid #f90;
+	border-right: 0.1em solid #f90;
+	border-bottom: 0.1em solid #f90;
+	border-radius: 0 0 0.1em 0.1em;
+	background:
+		linear-gradient(to bottom, #f90 0%, #f90 100%) 0.2em 0.2em,
+		linear-gradient(to bottom, #f90 0%, #f90 100%) 0.4em 0.2em,
+		linear-gradient(to bottom, #f90 0%, #f90 100%) 0.6em 0.2em
+	;
+	background-size: 0.1em 0.8em;
+	background-repeat: no-repeat;
+}
+/* 蓋 */
+.trash::before {
+	content: "";
+	position: absolute;
+	top: -0.1em;
+	left: -0.2em;
+	width: 1.3em;
+	height: 0.1em;
+	background-color: #f90;
+}
+/* 取っ手 */
+.trash::after {
+	content: "";
+	position: absolute;
+	top: -0.3em;
+	left: 0.1em;
+	width: 0.5em;
+	height: 0.2em;
+	border-top: 0.1em solid #f90;
+	border-left: 0.1em solid #f90;
+	border-right: 0.1em solid #f90;
+	border-radius: 0.1em 0.1em 0 0;
+}
